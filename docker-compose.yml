@@ -1,0 +1,7 @@
+version: "3"
+services:
+  frontend:
+    container_name: frontend
+    image: local-frontend:latest
+    ports:
+      - 5000:3000

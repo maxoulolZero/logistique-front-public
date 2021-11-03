@@ -1,0 +1,107 @@
+.popup {
+    text-align: center;
+    transition: all ease-in 200ms;
+    animation: fade-in 200ms ease-in forwards;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background: var(--background-blue);
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+
+.fields {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap : 10px;
+    width: 100%;
+}
+
+.content {
+    background: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 300px;
+    max-width: 500px;
+    width: 70vw;
+    z-index: 4;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.buttons {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.update, .add, .delete, .cancel {
+    color: white;
+    border : solid 1px var(--orange);
+    background-color: var(--orange);
+    padding: 0.3em;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor : pointer;
+    transition: all 200ms ease-in;
+}
+
+.add {
+    border : solid 1px var(--green);
+    background-color: var(--green);
+}
+
+
+.delete {
+    border : solid 1px var(--orange);
+    background-color: var(--red);
+}
+
+.cancel {
+    color: var(--red);
+    border : solid 1px var(--red);
+    background: white;
+}
+
+.update:hover {
+    color: var(--orange);
+    border : solid 1px var(--orange);
+    background: white;
+}
+
+.add:hover {
+    color: var(--green);
+    border : solid 1px var(--green);
+    background: white;
+}
+
+.delete:hover {
+    color: var(--red);
+    border : solid 1px var(--red);
+    background: white;
+}
+
+.error {
+    color : red;
+}

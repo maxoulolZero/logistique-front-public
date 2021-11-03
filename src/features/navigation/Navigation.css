@@ -1,0 +1,48 @@
+.navigation {
+    height: 10vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    border-bottom: 1px ;
+    position: relative;
+}
+
+.navigation::after {
+    background-color: var(--background-blue);
+    height: 1px;
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 10vh;
+    right: 10vh;
+
+}
+
+.navigation h1 {
+    color: var(--color);
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlink {
+    font-family: 'Mulish';
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 200ms ease-in;
+}
+
+.navlink:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navlink.active {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color : var(--color);
+}

@@ -1,0 +1,32 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--color);
+    font-size: 1.2em;
+}
+
+.footer * {
+    color: whitesmoke;
+}
+.version {
+    position: absolute;
+    right: 10px;
+}
+
+.name {
+    position: absolute;
+    left : 10px
+}
+
+.separator {
+    width: 5px;
+    border-radius: 2px;
+    height: 60%;
+    background-color: white;
+}
