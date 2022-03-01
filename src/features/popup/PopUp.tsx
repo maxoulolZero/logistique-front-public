@@ -2,7 +2,7 @@ import { TextField } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { getURL } from '../../utils/url';
-import './Popup.css';
+import './PopUp.css';
 
 export const PopUp = ({ type, setType, setLoaded, row }: any) => {
   const [description, setDescription] = useState('');
