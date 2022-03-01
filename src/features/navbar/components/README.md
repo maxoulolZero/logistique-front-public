@@ -1,4 +1,4 @@
-# Components
+# components
 
 Components scoped to the feature, not used anywhere else
 
